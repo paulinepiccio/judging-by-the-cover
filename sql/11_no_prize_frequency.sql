@@ -1,8 +1,4 @@
 -- Q11: How often is each prize not awarded?
--- Counts non-attribution sessions, regardless of cause (war, refusal, crisis, etc.).
--- This is a descriptive statistic, not a measure of jury rigor:
--- non-attributions can have many causes (WWI/WWII, institutional crises,
--- laureate refusal, etc.).
 
 SELECT 
   p.name AS prize_name,
