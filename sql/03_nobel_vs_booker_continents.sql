@@ -1,5 +1,4 @@
 -- Q3: How do Nobel and Booker compare in continental distribution?
--- Two prizes claiming international reach, but with different actual footprints.
 
 SELECT 
   p.name AS prize_name,
