@@ -1,6 +1,4 @@
 -- Q10: Which authors won the same prize multiple times?
--- Includes Akutagawa/Naoki (biannual prizes) but also Western prizes
--- where some authors have won twice (Faulkner, Coetzee, Mantel, etc.).
 
 SELECT 
   a.name AS author,
