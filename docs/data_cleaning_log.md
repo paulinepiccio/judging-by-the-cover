@@ -1,6 +1,6 @@
 # Data Cleaning Log
 
-This document tracks the data quality issues encountered during the project and the corrections applied. It is part of the methodological transparency of the `judging-by-the-cover` analysis.
+This document tracks the data quality issues encountered during the project and the corrections I applied. 
 
 ## Phase 1 — Scraping fixes (during data collection)
 
@@ -64,7 +64,7 @@ The 7 source CSVs used different country naming conventions:
 The Goncourt and Renaudot prizes do not provide an explicit `author_country` field on Wikipedia. A two-step approach was applied:
 
 1. All laureates initially assigned to **France** as the default nationality
-2. Non-French nationalities identified by parsing the `notes` field for explicit mentions (e.g., "Premier lauréat sénégalais", "Auteur belge")
+2. Non-French nationalities identified by parsing the `notes` field for explicit mentions
 
 **Result:** 11 Goncourt laureates and 6 Renaudot laureates identified as non-French.
 
@@ -107,16 +107,6 @@ Co-laureate rows from the Akutagawa Prize had been correctly split into separate
 ---
 
 ## Known remaining limitations
-
-These are limitations the project author is aware of but did not address, either because they fall outside the scope of the analysis or because correcting them would require disproportionate effort relative to their impact.
-
-### Missing "No prize awarded" years
-
-The scraper captured fewer non-attribution years than historically recorded:
-- **Nobel**: 4 captured out of 7 historical (1914, 1918, 1935, 1940, 1941, 1942, 1943)
-- **Pulitzer**: 7 captured out of 11 historical
-
-These omissions concern years already without laureates, so they do not affect any laureate-focused analysis. They would only matter for analyses comparing the **frequency** of non-attribution between prizes.
 
 ### Naoki Prize: missing publisher information
 
