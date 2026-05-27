@@ -1,5 +1,4 @@
 -- Q12: How old is each prize?
--- A timeline of literary prize creation across cultures.
 
 SELECT 
   name AS prize_name,
